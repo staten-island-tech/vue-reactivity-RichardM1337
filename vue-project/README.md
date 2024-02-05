@@ -1,6 +1,6 @@
 # vue-project
 
-This template should help get you started developing with Vue 3 in Vite.
+This is what'cha life like; try to live your life right; people really know you; push your buttons like typewrite
 
 ## Recommended IDE Setup
 

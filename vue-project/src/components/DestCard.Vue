@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h2>{{ Destination.name }}</h2>
+    <h1>{{ Destination.name }}</h1>
     <img :src="Destination.img" alt="" />
-    <h3>{{ clicked }}</h3>
-    <button @click="increment">Click Me</button>
+    <h2>{{ clicked }}</h2>
+    <button @click="increment">Click ME</button>
   </div>
 </template>
 
@@ -12,19 +12,18 @@ import { ref } from "vue";
 const props = defineProps({
   Destination: Object,
 });
-
-// clicker logic
-const clicked = ref(0); //start variable at 0 and update constantly
+//clicker logic
+const clicked = ref(0);
 function increment() {
   clicked.value++;
 }
 </script>
 
 <style scoped>
-/* scoped makes sure only elements here are referred */
+/* scoped makes sure only elements here are referred to */
 img {
-  width: 300px;
-  height: 350px;
+  width: 250px;
+  height: 300px;
   object-fit: cover;
 }
 </style>
