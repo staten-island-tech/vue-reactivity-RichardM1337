@@ -3,8 +3,9 @@ import "./assets/main.css";
 import { createApp } from "vue";
 import { createPinia } from "pinia";
 import App from "./App.vue";
-import "aos/dist/aos.css";
 import router from "./router";
+import "aos/dist/aos.css";
+import "./index.css";
 
 const app = createApp(App);
 
