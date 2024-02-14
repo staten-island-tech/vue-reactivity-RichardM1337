@@ -1,13 +1,18 @@
 <template>
   <main>
-    <VinylCard
-      v-for="Listing in vinylInfo"
-      :key="Listing.name"
-      :Listing="Listing"
-    />
+    <h1 class="heading">VINYLS</h1>
+    <div
+      class="cardContainer flex items-center justify-evenly flex-wrap m-1-auto"
+    >
+      <VinylCard
+        v-for="Listing in vinylInfo"
+        :key="Listing.name"
+        :Listing="Listing"
+      />
+    </div>
   </main>
 </template>
-
+<!-- @click="function(param), create function in script"-->
 <script setup>
 import { ref } from "vue";
 import VinylCard from "@/components/VinylCard.vue";

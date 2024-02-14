@@ -1,6 +1,6 @@
 <template>
-  <div class="VinylCard">
-    <img class="w-40 l-50" :src="Listing.img" />
+  <div class="VinylCard flex-row m-1 w-1/4 h-1/4">
+    <img class="w-50 l-60" :src="Listing.img" />
     <h1>{{ Listing.name }}</h1>
     <p>{{ Listing.price }}</p>
   </div>
@@ -14,3 +14,5 @@ const props = defineProps({
 </script>
 
 <style scoped></style>
+<!-- data-aos="zoom-in-up"
+    data-aos-anchor-placement="bottom-bottom"-->

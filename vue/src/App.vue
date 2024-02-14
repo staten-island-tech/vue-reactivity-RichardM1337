@@ -1,18 +1,13 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
+import { RouterLink, RouterView, useRouter, useRoute } from "vue-router";
 AOS.init();
+function cartPage() {
+  router.push("/cart");
+}
 </script>
 
 <template>
   <header>
-    <div
-      class="displayBox"
-      data-aos="zoom-in"
-      data-aos-anchor-placement="top-center"
-    >
-      <h1 class="text-black">Animated element using zoom-in.</h1>
-    </div>
-
     <!-- <div class="wrapper">
       <nav>
         <RouterLink to="/">Home</RouterLink>
@@ -22,4 +17,8 @@ AOS.init();
   </header>
 
   <RouterView />
+  <transition name="fade">
+    <component :is="Component" />
+  </transition>
+  <button @click="cartPage">^^^</button>
 </template>
