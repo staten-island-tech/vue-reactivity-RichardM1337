@@ -10,11 +10,20 @@
         :Listing="Listing"
       />
     </div>
+    <footer>
+      <button
+        class="arrowButton flex justify-center text-center sticky left-1/2 bottom-20px m-0"
+        @click="cartPage"
+      >
+        ^^^
+      </button>
+    </footer>
   </main>
 </template>
 <!-- @click="function(param), create function in script"-->
 <script setup>
 import { ref } from "vue";
+import { cartPage } from "../App.vue";
 import VinylCard from "@/components/VinylCard.vue";
 const vinylInfo = [
   {

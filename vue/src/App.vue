@@ -20,17 +20,20 @@ function cartPage() {
       </nav>
     </div> -->
   </header>
-
-  <RouterView />
-  <transition name="fade">
-    <component :is="Component" />
-  </transition>
-  <footer>
-    <button
-      class="flex justify-center text-center sticky left-1/2 bottom-20px m-0 translate-x-1/2 translate-y-1/2"
-      @click="cartPage"
-    >
-      ^^^
-    </button>
-  </footer>
+  <RouterView v-slot="{ Component }">
+    <transition name="slide" mode="out-in">
+      <component :is="Component"></component>
+    </transition>
+  </RouterView>
 </template>
+<style lang="css">
+.slide-enter-active,
+.slide-leave-active {
+  transition: opacity 1s, transform 1s;
+}
+.slide-enter-from,
+.slide-leave-to {
+  opacity: 0;
+  transform: translateY(-30%);
+}
+</style>
