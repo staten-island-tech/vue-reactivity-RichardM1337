@@ -1,8 +1,11 @@
 <template>
-  <div class="VinylCard flex-row m-1 w-1/4 h-1/4">
-    <img class="w-50 l-60" :src="Listing.img" />
+  <div class="VinylCard flex-row m-1 w-1/4 h-1/4" data-aos="fade-left">
+    <img class="w-2/4 l-2/4" :src="Listing.img" />
     <h1>{{ Listing.name }}</h1>
+    <p>{{ Listing.artist }}</p>
     <p>{{ Listing.price }}</p>
+    <p v-if="Listing.rare == true">Rare Item!</p>
+    <p v-else></p>
   </div>
 </template>
 
