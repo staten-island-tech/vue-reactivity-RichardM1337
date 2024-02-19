@@ -6,8 +6,6 @@ const router = useRouter();
 const route = useRoute();
 function cartPage() {
   const currentRouteName = router.currentRoute.value.path;
-  console.log(router.pathname);
-  console.log(router.query);
   return currentRouteName == "/" ? router.push("cart") : router.push("/");
 }
 // computed only changes on dependencies -- so less getter acccess

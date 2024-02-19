@@ -1,13 +1,14 @@
 <template>
-  <div></div>
+  <main>
+    <header></header>
+    <div class="container">
+      <ShoppingCart />
+    </div>
+  </main>
 </template>
 
-<script>
-export default {
-  setup() {
-    return {};
-  },
-};
+<script setup>
+import ShoppingCart from "@/components/ShoppingCart.vue";
 </script>
 
 <style scoped></style>
