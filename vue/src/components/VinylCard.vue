@@ -6,13 +6,24 @@
     <p>{{ Listing.price }}</p>
     <p v-if="Listing.rare == true">Rare Item!</p>
     <p v-else></p>
+    <button
+      @click="
+        btnText = 'Added';
+        addedToCart = !addedToCart;
+      "
+    >
+      {{ btnText }}
+    </button>
   </div>
 </template>
 
 <script setup>
+import { ref } from "vue";
 const props = defineProps({
   Listing: Object,
 });
+const btnText = ref("add to cart");
+const addedToCart = ref(false);
 // defineemits are for later
 </script>
 

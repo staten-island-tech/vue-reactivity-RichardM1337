@@ -1,8 +1,13 @@
 <template>
-  <div>hi</div>
-  <!-- empty div because arrows-->
+  <div></div>
 </template>
 
-<script></script>
+<script>
+export default {
+  setup() {
+    return {};
+  },
+};
+</script>
 
 <style scoped></style>
