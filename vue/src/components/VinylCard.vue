@@ -3,6 +3,7 @@
     id="#vinyl-template"
     class="VinylCard flex-row m-1 w-1/4 h-1/4"
     data-aos="fade-left"
+    data-aos-anchor-placement="center-bottom"
   >
     <img class="w-2/4 l-2/4" :src="Listing.img" />
     <h1>{{ Listing.name }}</h1>
@@ -10,7 +11,7 @@
     <p>{{ Listing.price }}</p>
     <p v-if="Listing.rare == true">Rare Item!</p>
     <p v-else></p>
-    <button @click="btnText = 'Added'">
+    <button @click="(btnText = 'Added'), (Listing.inCart = true)">
       {{ btnText }}
     </button>
   </div>
@@ -18,11 +19,10 @@
 
 <script setup>
 import { ref } from "vue";
-defineProps({
+const props = defineProps({
   Listing: Object,
 });
 const btnText = ref("add to cart");
-
 // defineemits are for later
 </script>
 
