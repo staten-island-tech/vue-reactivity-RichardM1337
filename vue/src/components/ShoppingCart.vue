@@ -4,11 +4,13 @@
     <h1>{{ cartListing.name }}</h1>
     <p>{{ cartListing.price }}</p>
   </div>
+  <p>Final Price: {{ finalPrice }}</p>
 </template>
 
 <script setup>
 const props = defineProps({
   cartListing: Object,
+  finalPrice: Object,
 });
 </script>
 

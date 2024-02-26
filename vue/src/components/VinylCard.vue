@@ -11,8 +11,9 @@
     <p>{{ Listing.price }}</p>
     <p v-if="Listing.rare == true">Rare Item!</p>
     <p v-else></p>
-    <button @click="(btnText = 'Added'), (Listing.inCart = true)">
-      {{ btnText }}
+    <button @click="Listing.inCart = !Listing.inCart">
+      <div v-if="Listing.inCart == false">Add To Cart</div>
+      <div v-else>Unadd</div>
     </button>
   </div>
 </template>
