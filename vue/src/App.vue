@@ -29,11 +29,11 @@ function cartPage() {
   <footer>
     <button
       @click="cartPage"
-      class="cartPic fixed w-max top-0 right-10 flex justify-center text-center bottom-20px m-0 bg-gray-600"
+      class="cartPic hover:animate-pulse fixed w-auto top-[50px] right-0 flex justify-center text-center m-0"
     >
       <img
-        class="w-25 h-25"
-        src="https://c0.klipartz.com/pngpicture/78/154/gratis-png-hombre-sonriente-empujando-carrito-de-supermercado-lleno-de-alimentos-carrito-de-compras-stock-photography-supermercado-supermercado-thumbnail.png"
+        class="w-1/2 h-1/2"
+        src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png"
       />
     </button>
   </footer>

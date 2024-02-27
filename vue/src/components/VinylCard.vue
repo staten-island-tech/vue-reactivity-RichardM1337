@@ -19,11 +19,9 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
 const props = defineProps({
   Listing: Object,
 });
-const btnText = ref("add to cart");
 // defineemits are for later
 </script>
 
