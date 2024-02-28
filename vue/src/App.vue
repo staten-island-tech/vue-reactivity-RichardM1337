@@ -29,11 +29,11 @@ function cartPage() {
   <footer>
     <button
       @click="cartPage"
-      class="cartPic hover:animate-pulse fixed w-auto top-[50px] right-0 flex justify-center text-center m-0"
+      class="cartPic hover:animate-pulse fixed top-[50px] right-0 flex justify-center text-center m-0 w-[500px] mx-0"
     >
       <img
-        class="w-1/2 h-1/2"
-        src="https://www.freeiconspng.com/thumbs/cart-icon/basket-cart-icon-27.png"
+        class="w-1/5 h-1/2"
+        src="https://www.pngall.com/wp-content/uploads/5/Shopping-Cart-PNG-Image-HD.png"
       />
     </button>
   </footer>
